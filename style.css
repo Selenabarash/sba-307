@@ -1,0 +1,142 @@
+header {
+    text-align: center;
+    border: 50px;
+    padding: 80px;
+    font-size: 80px;
+    color: burlywood;
+}
+
+
+/* I was trying to put the image below the words & could not figure it out */
+
+img {
+    border-radius: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+
+}
+
+/* how do I change the color of the links instead of staying blue and looking bad like that? */
+
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: burlywood;
+    margin: 0; /* Removes default margin */
+    padding: 20px 0; /* Adds space above and below the heading */
+}
+
+/* how do i change the link colors from blue? */
+
+nav {
+    padding: 20px;
+    justify-content: space-around;
+    background-color: burlywood;
+    display: flex;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    color:brown
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+}
+
+/* Below is CSS for Signup Form */
+
+form {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:burlywood
+}
+
+input {
+    background-color: #76625f;
+    padding: 15px;
+    margin-block-end: 10%;
+    cursor: pointer;
+}
+
+
+
+label {
+    display: block;
+    font-weight:lighter;
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+.Title {
+    text-align: left;
+    font-size: 50;
+
+}
+.question {
+    text-align: left;
+}
+/* i would like to add the p { that is also in the sign up form but i know it will get mixed up because there is antoher p element already in here. how can i get better at sorting out my elements? */
+
+
+/* Coffee Cup and Steam Styling */
+
+
+.coffee-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.coffee-cup {
+    width: 250px; /* Adjust width for the coffee cup */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Steam effect styling */
+.steam {
+    position: absolute;
+    bottom: 100%;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: steam 4s infinite;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.steam:nth-child(2) {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.steam:nth-child(3) {
+    left: 60%;
+    animation-delay: 2s;
+}
+
+/* Steam Keyframes Animation */
+@keyframes steam {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-20px) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-40px) scale(1.5);
+    }
+}
